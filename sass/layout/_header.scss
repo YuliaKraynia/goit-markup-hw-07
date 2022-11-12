@@ -15,9 +15,8 @@
 
 .logo {
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include font (26px, 700, 30px);
+
     letter-spacing: 0.03em;
     color: var(--blue-color);
     margin-right: 93px;
@@ -40,18 +39,17 @@
 .menu-link {
     position: relative;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+
+    @include font ($fs, 500, 16px);
+
     letter-spacing: 0.02em;
     color: var(--accent-color-header);
     transition: color var(--transition-dur-and-fund);
 
-}
-
-.menu-link:hover,
-.menu-link:focus {
+&:hover,
+&:focus {
     color: var(--blue-color);
+    }
 }
 
 .menu-link-actv::after {
@@ -73,20 +71,19 @@
     width: 100%;
     height: auto;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font ($fs, 500, 16px);
+    
     letter-spacing: 0.02em;
     color: var(--accent-color-text);
     transition: color var(--transition-dur-and-fund);
 
     margin-left: auto;
     margin-right: 50px;
-}
 
-.contact-email:hover,
-.contact-email:focus {
-    color: var(--blue-color);
+&:hover,
+&:focus {
+   color: var(--blue-color);
+    }
 }
 
 .contact-email-icon {
@@ -100,20 +97,19 @@
     width: 100%;
     height: auto;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font ($fs, 500, 16px);
+
     letter-spacing: 0.02em;
     color: var(--accent-color-text);
     transition: color var(--transition-dur-and-fund);
 
     margin-left: auto;
     margin-right: 50px;
-}
 
-.portfolio-email:hover,
-.portfolio-email:focus {
+&:hover,
+&:focus {
     color: var(--blue-color);
+    }
 }
 
 .contact-phone-number {
@@ -122,17 +118,16 @@
     width: 100%;
     height: auto;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font ($fs, 500, 16px);
+
     letter-spacing: 0.02em;
     color: var(--accent-color-text);
     transition: color var(--transition-dur-and-fund);
-}
 
-.contact-phone-number:hover,
-.contact-phone-number:focus {
+&:hover,
+&:focus {
     color: var(--blue-color);
+    }
 }
 
 .contact-phone-icon {
@@ -146,16 +141,16 @@
     width: 100%;
     height: auto;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font ($fs, 500, 16px);
+
     letter-spacing: 0.02em;
     transition: color var(--transition-dur-and-fund);
 
     color: var(--accent-color-text);
+
+&:hover,
+&:focus {
+    color: var(--blue-color);
+    }
 }
 
-.portfolio-number:hover,
-.portfolio-number:focus {
-    color: var(--blue-color);
-}

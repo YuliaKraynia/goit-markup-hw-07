@@ -29,17 +29,15 @@
 }
 
 .text-description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font ();
+    
     letter-spacing: 0.03em;
     color: var(--accent-color-text);
 }
 
 .title-description {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font ($fs, 700, 16px);
+    
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--accent-color-header);

@@ -10,18 +10,16 @@
 
 .adress {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font ();
+
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
 
 .connection {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font ();
+    
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -46,9 +44,8 @@
 .title-footer {
     display: block;
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1, 14;
+    @include font ($fs, 700, 16px);
+   
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -70,11 +67,11 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color var(--transition-dur-and-fund);
-}
 
-.social-link-footer:hover,
-.social-link-footer:focus {
+&:hover,
+&:focus {
     background-color: var(--blue-color);
+    }
 }
 
 .footer-icon {
@@ -98,9 +95,8 @@
 }
 
 .footer-form-name {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font ($fs, 700, 16px);
+    
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -113,9 +109,8 @@
 }
 
 .footer-form-input {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font (16px, $fw, 20px);
+    
     letter-spacing: 0.03em;
     width: 358px;
     height: 50px;
@@ -140,9 +135,8 @@
     justify-content: center;
     align-items: center;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font (16px, 700, 30px);
+    
     letter-spacing: 0.06em;
     width: 200px;
     height: 50px;

@@ -4,9 +4,8 @@
 }
 
 .services {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
+    @include font (16px, 500, 26px);
+
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--accent-color-header);
@@ -18,9 +17,9 @@
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
+
+    @include font (16px, 500, 26px);
+    
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--accent-color-header);
@@ -30,13 +29,13 @@
     border: 0 solid;
 
     transition: color var(--transition-dur-and-fund), background-color var(--transition-dur-and-fund), box-shadow var(--transition-dur-and-fund);
-}
 
-.gallery-btn:hover,
-.gallery-btn:focus {
+&:hover,
+&:focus {
     color: #FFFFFF;
     background-color: var(--blue-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
 
 .portfolio-btn {
@@ -53,22 +52,19 @@
     padding-left: 24px;
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
-
 }
 
 .project {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+    @include font (18px, 700, 36px);
+
     letter-spacing: 0.06em;
     color: var(--accent-color-header);
     margin-bottom: 4px;
 }
 
 .form-project {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font (16px, $fw, 30px);
+   
     letter-spacing: 0.03em;
     color: var(--accent-color-text);
 }
@@ -81,16 +77,19 @@
 
 .gallery-foto {
     flex-basis: calc((100% - 240px)/9);
-
 }
 
 .gallery-work-link {
     display: block;
     text-decoration: none;
-}
 
-.gallery-work-link:hover {
+&:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+&:hover .overlay,
+&:focus {
+    transform: translate(0, 0);
+}
 }
 
 .gallery-work-overlay {
@@ -108,9 +107,8 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
+    @include font (18px, $fw, 28px);
+    
     letter-spacing: 0.03em;
     padding: 63px;
     padding-bottom: 63px;
@@ -121,7 +119,3 @@
     background-color: rgba(33, 150, 243, 0.9);
 }
 
-.gallery-work-link:hover .overlay,
-.gallery-work-link:focus {
-    transform: translate(0, 0);
-}

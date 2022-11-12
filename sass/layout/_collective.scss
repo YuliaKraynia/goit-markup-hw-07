@@ -5,9 +5,8 @@
 }
 
 .name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font (16px, 500, 19px);
+   
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--accent-color-header);
@@ -15,9 +14,8 @@
 }
 
 .profession {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font ($fs 16px, $lh 19px);
+   
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--accent-color-text);
@@ -25,9 +23,8 @@
 }
 
 .title-section {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    @include font (36px, 700, 42px);
+
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--accent-color-header);
@@ -67,19 +64,20 @@
     border-radius: 50%;
     background-color: #FFFFFF;
     transition: background-color var(--transition-dur-and-fund);
+
+&:hover,
+&:focus {
+        background-color: var(--blue-color);
+    }
 }
 
 .social-list-icon {
     fill: #AFB1B8;
     transition: fill var(--transition-dur-and-fund);
-}
 
-.social-list-link:hover,
-.social-list-link:focus {
-    background-color: var(--blue-color);
-}
-
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
+.social-list-link:hover &,
+.social-list-link:focus & {
     fill: #ffffff;
+    }
 }
+

@@ -20,10 +20,10 @@
     fill: #AFB1B8;
     transition: fill var(--transition-dur-and-fund), border-color var(--transition-dur-and-fund);
 
+&:hover,
+&:focus {
+        fill: var(--blue-color);
+        border-color: var(--blue-color);
+    }
 }
 
-.client-linc:hover,
-.client-linc:focus {
-    fill: var(--blue-color);
-    border-color: var(--blue-color);
-}
