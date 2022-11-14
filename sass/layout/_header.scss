@@ -32,11 +32,11 @@
     display: flex;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.menu-link {
+.menu__link {
     position: relative;
     font-family: 'Roboto', sans-serif;
 
@@ -52,7 +52,7 @@
     }
 }
 
-.menu-link-actv::after {
+.menu__link_activ::after {
     display: block;
     position: absolute;
     top: auto;

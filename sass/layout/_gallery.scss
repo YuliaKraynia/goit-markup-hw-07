@@ -1,4 +1,4 @@
-.gallery-section {
+.gallery {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -11,7 +11,7 @@
     color: var(--accent-color-header);
 }
 
-.gallery-btn {
+.gallery__btn {
     font-family: 'Roboto', sans-serif;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -46,7 +46,7 @@
     flex-basis: auto;
 }
 
-.gallery-foto-project {
+.gallery-work__project {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
@@ -54,7 +54,7 @@
     border: 1px solid #EEEEEE;
 }
 
-.project {
+.gallery-work__project_name {
     @include font (18px, 700, 36px);
 
     letter-spacing: 0.06em;
@@ -62,7 +62,7 @@
     margin-bottom: 4px;
 }
 
-.form-project {
+.gallery-work__project_form {
     @include font (16px, $fw, 30px);
    
     letter-spacing: 0.03em;
@@ -75,11 +75,11 @@
     gap: 30px;
 }
 
-.gallery-foto {
+.gallery-work__foto {
     flex-basis: calc((100% - 240px)/9);
 }
 
-.gallery-work-link {
+.gallery-work__link {
     display: block;
     text-decoration: none;
 
@@ -92,7 +92,7 @@
 }
 }
 
-.gallery-work-overlay {
+.gallery-work__overlay {
     position: relative;
     overflow: hidden;
 }

@@ -24,24 +24,24 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.adress-footer {
+.footer-adress {
     display: flex;
     flex-direction: column;
 }
 
-.adress-footer-map {
+.footer-adress-map {
     padding-top: 20px;
 }
 
-.email-footer {
+.footer-email {
     margin-top: 9px;
 }
 
-.tel-footer {
+.footer-tel {
     margin-top: 9px;
 }
 
-.title-footer {
+.footer-title {
     display: block;
     font-style: normal;
     @include font ($fs, 700, 16px);
@@ -52,13 +52,13 @@
     color: #FFFFFF;
 }
 
-.link-footer {
+.footer-link {
     display: flex;
     gap: 10px;
     text-decoration: none;
 }
 
-.social-link-footer {
+.footer-social-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,15 +86,11 @@
     gap: 70px;
 }
 
-.icon-link-footer {
+.footer-link-icon {
     fill: #FFFFFF;
 }
 
-.footer-form {
-    margin-left: auto;
-}
-
-.footer-form-name {
+.footer__name {
     @include font ($fs, 700, 16px);
     
     letter-spacing: 0.03em;
@@ -104,7 +100,7 @@
     margin-bottom: 20px;
 }
 
-.footer-form-connection {
+.footer-form__connection {
     display: flex;
 }
 
@@ -130,7 +126,7 @@
     color: #FFFFFF;
 }
 
-.footer-form-submit {
+.footer-form__submit {
     display: flex;
     justify-content: center;
     align-items: center;

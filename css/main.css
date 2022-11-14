@@ -368,11 +368,11 @@ body {
   display: flex;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.menu-link {
+.menu__link {
   position: relative;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -383,11 +383,11 @@ body {
   -webkit-transition: color var(--transition-dur-and-fund);
   transition: color var(--transition-dur-and-fund);
 }
-.menu-link:hover, .menu-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--blue-color);
 }
 
-.menu-link-actv::after {
+.menu__link_activ::after {
   display: block;
   position: absolute;
   top: auto;
@@ -784,7 +784,7 @@ body {
   border-color: var(--blue-color);
 }
 
-.gallery-section {
+.gallery {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -798,7 +798,7 @@ body {
   color: var(--accent-color-header);
 }
 
-.gallery-btn {
+.gallery__btn {
   font-family: "Roboto", sans-serif;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -818,7 +818,7 @@ body {
   transition: color var(--transition-dur-and-fund), background-color var(--transition-dur-and-fund), box-shadow var(--transition-dur-and-fund);
   transition: color var(--transition-dur-and-fund), background-color var(--transition-dur-and-fund), box-shadow var(--transition-dur-and-fund), -webkit-box-shadow var(--transition-dur-and-fund);
 }
-.gallery-btn:hover, .gallery-btn:focus {
+.gallery__btn:hover, .gallery__btn:focus {
   color: #FFFFFF;
   background-color: var(--blue-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -838,7 +838,7 @@ body {
       flex-basis: auto;
 }
 
-.gallery-foto-project {
+.gallery-work__project {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -846,7 +846,7 @@ body {
   border: 1px solid #EEEEEE;
 }
 
-.project {
+.gallery-work__project_name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -855,7 +855,7 @@ body {
   margin-bottom: 4px;
 }
 
-.form-project {
+.gallery-work__project_form {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -872,25 +872,25 @@ body {
   gap: 30px;
 }
 
-.gallery-foto {
+.gallery-work__foto {
   -ms-flex-preferred-size: calc((100% - 240px) / 9);
       flex-basis: calc((100% - 240px) / 9);
 }
 
-.gallery-work-link {
+.gallery-work__link {
   display: block;
   text-decoration: none;
 }
-.gallery-work-link:hover {
+.gallery-work__link:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.gallery-work-link:hover .overlay, .gallery-work-link:focus {
+.gallery-work__link:hover .overlay, .gallery-work__link:focus {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
 
-.gallery-work-overlay {
+.gallery-work__overlay {
   position: relative;
   overflow: hidden;
 }
@@ -948,7 +948,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.adress-footer {
+.footer-adress {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,19 +958,19 @@ body {
           flex-direction: column;
 }
 
-.adress-footer-map {
+.footer-adress-map {
   padding-top: 20px;
 }
 
-.email-footer {
+.footer-email {
   margin-top: 9px;
 }
 
-.tel-footer {
+.footer-tel {
   margin-top: 9px;
 }
 
-.title-footer {
+.footer-title {
   display: block;
   font-style: normal;
   font-weight: 700;
@@ -981,7 +981,7 @@ body {
   color: #FFFFFF;
 }
 
-.link-footer {
+.footer-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -989,7 +989,7 @@ body {
   text-decoration: none;
 }
 
-.social-link-footer {
+.footer-social-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1006,7 +1006,7 @@ body {
   -webkit-transition: background-color var(--transition-dur-and-fund);
   transition: background-color var(--transition-dur-and-fund);
 }
-.social-link-footer:hover, .social-link-footer:focus {
+.footer-social-link:hover, .footer-social-link:focus {
   background-color: var(--blue-color);
 }
 
@@ -1031,7 +1031,7 @@ body {
   gap: 70px;
 }
 
-.icon-link-footer {
+.footer-link-icon {
   fill: #FFFFFF;
 }
 
@@ -1039,7 +1039,7 @@ body {
   margin-left: auto;
 }
 
-.footer-form-name {
+.footer-form__name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1049,7 +1049,7 @@ body {
   margin-bottom: 20px;
 }
 
-.footer-form-connection {
+.footer-form__connection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1075,7 +1075,7 @@ body {
   color: #FFFFFF;
 }
 
-.footer-form-submit {
+.footer-form__submit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
