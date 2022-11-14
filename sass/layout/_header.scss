@@ -18,14 +18,14 @@
     @include font (26px, 700, 30px);
 
     letter-spacing: 0.03em;
-    color: var(--blue-color);
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 24px;
+    color: var(--blue-color);
 }
 
 .logodark {
-    color: #000;
+    color: #000000;
 }
 
 .menu {
